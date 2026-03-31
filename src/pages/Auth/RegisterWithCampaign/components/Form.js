@@ -108,26 +108,26 @@ export const RegisterWithCampaignForm = ({ campaign, onSubmit }) => {
     }
     
     if(!registerData.email){
-      setFormError({ ...formError, ['email']: 'Field required' });
+      setFormError({ ...formError, 'email': 'Field required' });
     }else if(! registerData.first_name){
-      setFormError({ ...formError, ['first_name']: 'Field required' });
+      setFormError({ ...formError, 'first_name': 'Field required' });
 
     }else if (!registerData.last_name){
-      setFormError({ ...formError, ['last_name']: 'Field required' });
+      setFormError({ ...formError, 'last_name': 'Field required' });
     }else if (!registerData.password) {
-      setFormError({ ...formError, ['password']: 'Field required' });
+      setFormError({ ...formError, 'password': 'Field required' });
     }else if (!registerData.username) {
-      setFormError({ ...formError, ['username']: 'Field required' });
+      setFormError({ ...formError, 'username': 'Field required' });
     }else if (!registerData.phone_number){
       setErrorPhoneNumber('Field required.');
     } else if (checkCertify === false) {
       setErrorCheck('Check field required');
     } else{
-      setFormError({ ...formError, ['email']: '' });
-      setFormError({ ...formError, ['first_name']: '' });
-      setFormError({ ...formError, ['last_name']: '' });
-      setFormError({ ...formError, ['password']: '' });
-      setFormError({ ...formError, ['username']: '' });
+      setFormError({ ...formError, 'email': '' });
+      setFormError({ ...formError, 'first_name': '' });
+      setFormError({ ...formError, 'last_name': '' });
+      setFormError({ ...formError, 'password': '' });
+      setFormError({ ...formError, 'username': '' });
       setErrorCheck('');
       setErrorPhoneNumber('');
       if (campaign?.preview) {
@@ -363,11 +363,11 @@ export const RegisterWithCampaignForm = ({ campaign, onSubmit }) => {
           />
           <span>
             I certify that I am 18 years of age or older, I agree to the{' '}
-            <a href="https://yootribe.io/terms" target="_blank" style={{ textDecoration: 'none' }}>
+            <a href="https://yootribe.io/terms" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
               Terms
             </a>
             , and I have read the
-            <a href="https://yootribe.io/privacy" target="_blank" style={{ textDecoration: 'none' }}>
+            <a href="https://yootribe.io/privacy" target="_blank" style={{ textDecoration: 'none' }} rel="noreferrer">
               {' '}
               Privacy Policy
             </a>

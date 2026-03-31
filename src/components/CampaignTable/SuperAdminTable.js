@@ -98,7 +98,7 @@ const SuperAdminTable = ({ setOpenApprove, setOpenReject, setSelectedCampaign })
       (
         <div>
           {row?.name ? (
-            <a href={`/auth/register/campaign/${row.slug}`} style={{display:'block'}} target='_blank'>{row.name}</a>
+            <a href={`/auth/register/campaign/${row.slug}`} style={{display:'block'}} target='_blank' rel="noreferrer">{row.name}</a>
           ) : (
             'N/A'
           )}

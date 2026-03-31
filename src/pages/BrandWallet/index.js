@@ -1,5 +1,6 @@
 import React from 'react';
 import { PageHeader } from '../../components/PageHeader';
+import NFTStats from '../../components/NFTStats';
 
 const BrandWallet = () => {
 
@@ -16,7 +17,7 @@ const BrandWallet = () => {
 
       <div className={'nft-content'}>
         <div className="container">
-          TODO brand wallet page
+          <NFTStats embed />
         </div>
       </div>
     </main>
