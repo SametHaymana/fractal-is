@@ -29,5 +29,11 @@ module.exports = function override(config) {
     }
   });
 
+  // Dependencies often ship broken/missing source maps (e.g. react-intl-tel-input); ignore noise only.
+  config.ignoreWarnings = [
+    ...(config.ignoreWarnings || []),
+    /Failed to parse source map/
+  ];
+
   return config;
 };

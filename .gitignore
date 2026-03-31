@@ -14,3 +14,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /public/uploads
+/build
+
+# Added for not show too many changes on PR in production this should be commited
+package-lock.json

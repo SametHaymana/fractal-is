@@ -70,7 +70,7 @@ export const RegisterUser = () => {
     });
 
     return registerUser(formData)
-      .then(({ user }) => {
+      .then(() => {
         window.location.replace('https://yootribe.io/thankyou-brand');
       })
       .catch((error) => {
@@ -252,11 +252,11 @@ export const RegisterUser = () => {
                           htmlFor="accept"
                         >
                           I certify that I am 18 years of age or older, I agree to the{' '}
-                          <a href="https://yootribe.io/terms" target="_blank">
+                          <a href="https://yootribe.io/terms" target="_blank" rel="noreferrer">
                             Terms
                           </a>
                           , and I have read the
-                          <a href="https://yootribe.io/privacy" target="_blank">
+                          <a href="https://yootribe.io/privacy" target="_blank" rel="noreferrer">
                             Privacy Policy
                           </a>
                           .

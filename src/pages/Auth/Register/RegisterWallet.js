@@ -287,11 +287,11 @@ export const RegisterWallet = () => {
                         />
                         <label className="label custom-control-label form-check-label" htmlFor="terms_conditions">
                           I certify that I am 18 years of age or older, I agree to the
-                          <a style={{ color: '#ea8f0c',marginLeft:'3px' }} target="_blank" href="https://yootribe.io/terms">
+                          <a style={{ color: '#ea8f0c',marginLeft:'3px' }} target="_blank" href="https://yootribe.io/terms" rel="noreferrer">
                             Terms
                           </a>
                           , and I have read the
-                          <a style={{ color: '#ea8f0c',marginLeft:'3px' }} target="_blank" href="https://yootribe.io/privacy">
+                          <a style={{ color: '#ea8f0c',marginLeft:'3px' }} target="_blank" href="https://yootribe.io/privacy" rel="noreferrer">
                             Privacy Policy
                           </a>
                           .

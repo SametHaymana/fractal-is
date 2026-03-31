@@ -30,6 +30,7 @@ import UserSecurity from "../pages/BrandProfile/userSecurity";
 import CompanyProfile from "../pages/BrandProfile/companyProfile";
 import BrandInvoices from "../pages/BrandProfile/brandInvoices";
 import BrandWallet from "../pages/BrandWallet";
+import NFTStats from '../components/NFTStats';
 
 const routes = () => (
   <Routes>
@@ -56,6 +57,7 @@ const routes = () => (
         <Route path="/dashboard/nfts/update/:id" element={<UpdateNft />} />
         <Route path="/dashboard/campaigns/create" element={<CreateCampaign />} />
         <Route path="/dashboard/my-wallet" element={<BrandWallet />} />
+        <Route path="/dashboard/nft-stats" element={<NFTStats />} />
         <Route path="/dashboard/user/profile" element={<UserProfile />} />
         <Route path="/dashboard/user/security" element={<UserSecurity />} />
         <Route path="/dashboard/company/profile" element={<CompanyProfile />} />
